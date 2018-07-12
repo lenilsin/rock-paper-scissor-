@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>rock paper or scissor</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="icon.png" />
+    </head>
+  <body>
+    <header>
+      <h1>choose what you want to play</h1>
+      <h2 id="msg">this game works once at time, so if you wanna play again reload the page!</h2>
+    </header>
+    <div id="imgs">
+      <div id="paper">
+        <img src="images/paper.png" onclick="get(0)" onclick="over()"/>
+      </div>
+      <div id="rock">
+        <img src="images/rock.png" onclick="get(1)" onclick="over()"/>
+      </div>
+      <div id="scissor">
+        <img src="images/scissor.png" onclick="get(2)" onclick="over()"/>
+      </div>
+    </div>
+    <div id="audio">
+      <audio src="sound/audio.mp3" type="audio/mp3" id="audio1"></audio>
+    </div>
+    </div>
+    <div id="coins-container">
+      <div id="coins">
+        <p id="coin"></p>
+    </div>
+    <noscript>
+      this game works using javascript, please enable if you wanna play!
+    </noscript>
+    <script src="app.js"></script>
+    <script src="coin.js"></script>
+  </body>
+</html>
